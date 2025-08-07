@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabela de Métricas do Projeto</title>
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  h2 {
+    color: #333;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  /* Adicionado para melhor alinhamento visual nas células mescladas */
+  td[rowspan] {
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+  }
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+</style>
+</head>
+<body>
+
+<h2>Tabela de Métricas e Finalidades do Projeto</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Categoria</th>
+      <th>Métrica</th>
+      <th>Descrição / Finalidade no Projeto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Socioeconômicas e Demográficas</td>
+      <td>IDHM</td>
+      <td>Mede a qualidade de vida para correlacionar com os índices de violência.</td>
+    </tr>
+    <tr>
+      <td>População e Densidade Demográfica</td>
+      <td>Entender a escala e a concentração populacional, servindo de base para o cálculo de taxas.</td>
+    </tr>
+    <tr>
+      <td>Taxa de Escolarização</td>
+      <td>Avaliar o nível educacional como um possível fator de influência.</td>
+    </tr>
+    <tr>
+      <td>PIB per capita</td>
+      <td>Medir a riqueza média para analisar a relação entre condição econômica e criminalidade.</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Criminalidade</td>
+      <td>Número de Registros de Violência</td>
+      <td>Quantificar o volume bruto de ocorrências por município e período.</td>
+    </tr>
+    <tr>
+      <td>Número de Registros de Violência (por 100 mil hab.)</td>
+      <td>Quantificar o volume de ocorrências por 100 mil habitantes, por município e período.</td>
+    </tr>
+    <tr>
+      <td>Frequência por Tipo de Delito</td>
+      <td>Identificar os tipos de violência mais prevalentes (Ameaça, Lesão Corporal, etc.).</td>
+    </tr>
+    <tr>
+      <td>Frequência Temporal</td>
+      <td>Analisar a distribuição dos crimes ao longo de meses e dias para identificar sazonalidades.</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Analíticas (Calculadas)</td>
+      <td>Taxa de Violência por Habitantes</td>
+      <td>Métrica principal para normalizar os dados, permitindo uma comparação justa entre municípios.</td>
+    </tr>
+    <tr>
+      <td>Coeficiente de Correlação</td>
+      <td>Medir estatisticamente a força da relação entre as variáveis.</td>
+    </tr>
+    <tr>
+      <td>Padrão de Variação Mensal da Violência</td>
+      <td>Identificar picos de ocorrências em meses, dia da semana ou feriados específicos.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
